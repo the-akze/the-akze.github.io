@@ -32,15 +32,32 @@ function App() {
         <div className="section-container">
 
           <div className="section" id="section-projects">
-            <h1>{staticData.sections.projects.title}</h1>
+            <h1>Projects</h1>
             <p>{staticData.sections.projects.description}</p>
-            <CardContainer data={staticData.sections.projects.projectList}/>
+
+            <h2 className="italic">Larger Projects</h2>
+            <CardContainer data={staticData.sections.projects.projectList1}/>
+
+            <h2 className="italic">Smaller Projects</h2>
+            <CardContainer data={staticData.sections.projects.projectList2}/>
           </div>
 
-          <div className="section" id="section-overview">
-            <h1>sample text</h1>
-          </div>
+          {/* <div className="section" id="section-overview">
+            <h1>Skills</h1>
+            <p></p>
 
+            <h4>Languages</h4>
+            <p>C++, Shell Scripting (bash/zsh), Python, JavaScript, Java, HTML, CSS, C#, LaTeX</p>
+
+            <h4>Frameworks</h4>
+            <p>React Native, Expo, Node.js, Flask, p5.js, p5.play.js</p>
+
+            <h4>Platforms</h4>
+            <p>Linux, Fusion360 (CAD), KiCAD, git, vim, tmux, Unity, VSCode, Firebase</p>
+
+            <h4>Hardware</h4>
+            <p>3D Printing (OrcaSlicer), Arduino, Raspberry Pi, Breadboarding, Multimeter, Soldering, PCB Design</p>
+          </div> */}
         </div>
       </div>
 

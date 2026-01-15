@@ -6,6 +6,7 @@
     --color-surface-highlighted: hsl(206, 36%, 18%);
     --color-edge: hsl(206, 30%, 30%);
     --color-text-subtle: hsl(206, 25%, 60%);
+    --color-text-faint: hsl(207, 15%, 42%);
 }
 
 * {
@@ -22,16 +23,21 @@ html, body {
     height: 100%;
 }
 
+.italic {
+    font-style: italic;
+}
+
 .banner {
     width: 100%;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 120px;
     background-size: cover;
     background-position-y: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    box-shadow: inset 0px -40px 30px var(--color-bg);
 }
 
 .banner .effect {
@@ -177,12 +183,45 @@ html, body {
     width: 100%;
 }
 
-.section h1 {
+.section>h1,
+.section>h2,
+.section>h3,
+.section>h4,
+.section>h5,
+.section>h6 {
     margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.section>h1 {
     font-size: 3rem;
 }
 
-.section p {
+.section>h2 {
+    font-size: 2.2rem;
+}
+
+.section>h3 {
+    font-size: 1.8rem;
+}
+
+.section>h4 {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.section>h5 {
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+.section>h6 {
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.section>p {
     margin-bottom: 30px;
 }
 
@@ -216,17 +255,29 @@ html, body {
 
 .card .card-img {
     aspect-ratio: 16 / 9;
-    background-size: cover;
+    /* height: 200px; */
+    background-size: contain;
     margin-bottom: 5px;
     border-radius: 2px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .card .card-title {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.card .card-subtitle {
+    margin: 0;
+    margin-top: -8px;
+    font-size: 0.8rem;
+    color: var(--color-text-faint);
+    font-style: italic;
 }
 
 .card .card-description {
     margin: 0;
     color: var(--color-text-subtle);
+    font-size: 0.9rem;
 }
