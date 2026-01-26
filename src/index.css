@@ -81,7 +81,7 @@ html, body {
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     row-gap: 10px;
     width: fit-content;
 }

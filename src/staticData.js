@@ -34,13 +34,6 @@ On the side, I enjoy 3D printing, music production, photography, and 3D graphics
                     image: imgProjectSmartclicks,
                     url: "https://devpost.com/software/smartclicks"
                 },
-                {
-                    title: "title",
-                    subtitle: "subtitle",
-                    description: "desc",
-                    image: "",
-                    url: ""
-                },
             ],
             projectList2: [
                 {

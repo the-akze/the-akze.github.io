@@ -33,13 +33,16 @@ function App() {
 
           <div className="section" id="section-projects">
             <h1>Projects</h1>
-            <p>{staticData.sections.projects.description}</p>
+            {/* <p>{staticData.sections.projects.description}</p> */}
 
-            <h2 className="italic">Larger Projects</h2>
+            {/* <h2 className="italic">Larger Projects</h2> */}
             <CardContainer data={staticData.sections.projects.projectList1}/>
 
-            <h2 className="italic">Smaller Projects</h2>
-            <CardContainer data={staticData.sections.projects.projectList2}/>
+            {/* <h2 className="italic">Smaller Projects</h2> */}
+            {/* <CardContainer data={staticData.sections.projects.projectList2}/> */}
+
+            <br/><br/>
+            <p>This website is still under construction!</p>
           </div>
 
           {/* <div className="section" id="section-overview">
