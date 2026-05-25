@@ -100,14 +100,103 @@ html, body {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
+    margin-top: 10px;
+}
+
+.banner .title-container {
+    display: flex;
+    flex-direction: row;
+    row-gap: 20px;
+    column-gap: 30px;
 }
 
 .banner .title {
     z-index: 15;
     font-size: 4rem;
     margin: 0;
-    margin-top: 10px;
     line-height: 3.2rem;
+}
+
+.banner .title-waves {
+    background-color: #ffffff22;
+    flex-grow: 1;
+    background-size: 15000% 200%;
+    background-position: 0%;
+    animation: 234s linear 0s infinite forwards waves-image-move-animation;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s;
+    padding: 8px;
+    &>p {
+        font-weight: 900;
+        margin: 0;
+        margin-right: 5px;
+        /* text-shadow: 1px 1px 2px #000000AA; */
+        font-size: 1rem;
+    }
+    &>* {
+        opacity: 0;
+        color: #ffffff;
+    }
+    &:hover {
+        background-color: #00000066;
+        box-shadow: 1px 1px 8px #00000066;
+        &>* {
+            opacity: 1;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .title-waves>p {
+        display: none;
+    }
+    .title-waves {
+        background-color: #00000066 !important;
+        box-shadow: 1px 1px 8px #00000066;
+        &>* {
+            opacity: 1 !important;
+        }
+    }
+    .banner .title {
+        font-size: 3rem;
+    }
+    .banner .subtitle {
+        text-align: left !important;
+    }
+    .banner .title-container {
+        flex-wrap: wrap;
+    }
+}
+
+.title-waves-music-link-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    &>a {
+        margin: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: inherit;
+    }
+}
+
+@keyframes waves-image-move-animation {
+    0% {
+        background-position: -0.68%;
+    }
+
+    100% {
+        background-position: 99.3%;
+    }
 }
 
 .banner .subtitle {
@@ -115,6 +204,7 @@ html, body {
     margin-bottom: 0;
     white-space: pre-line;
     max-width: 650px;
+    text-align: justify;
 }
 
 .banner-info p,

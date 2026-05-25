@@ -7,7 +7,7 @@ const staticData = {
     bannerDescription:
 `Hi! I'm a Computer Engineering student at Georgia Tech, \
 and I'm enthusiastic about programming, electronics, and robotics. \
-On the side, I enjoy 3D printing, music production, photography, and 3D graphics.`,
+On top of those, I enjoy music production, sound design, 3D graphics, working out, and the outdoors.`,
 
     sections: {
         projects: {
@@ -45,6 +45,15 @@ On the side, I enjoy 3D printing, music production, photography, and 3D graphics
                 }
             ]
         }
+    },
+    
+    links: {
+        spotify: "https://open.spotify.com/artist/7De6hkmYx9C7dUao7ctPUk",
+        applemusic: "https://music.apple.com/us/artist/akze/1503135746",
+        youtube: "https://www.youtube.com/@the_akze",
+        instagram: "http://instagram.com/the_akze",
+        linkedin: "https://www.linkedin.com/in/the-akshat-s",
+        github: "https://github.com/the-akze"
     }
 };
 

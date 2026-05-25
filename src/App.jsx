@@ -4,7 +4,12 @@ import staticData from "./staticData";
 
 import imgClouds from "./assets/img/akze_cloud.jpeg";
 import imgProfile from "./assets/img/pfp.png";
+import imgWaveform from "./assets/img/waveform.png";
+
+import { FaSpotify, FaYoutube } from "react-icons/fa";
+
 import CardContainer from "./components/CardContainer";
+import { SiApplemusic } from "react-icons/si";
 
 function App() {
   return (
@@ -15,15 +20,27 @@ function App() {
           <div className="banner-profile-container">
             <div className="pfp" style={{backgroundImage: `url(${imgProfile})`}} />
             <div className="banner-text">
-              <h1 className="title">{staticData.bannerTitle}</h1>
+              <div className="title-container">
+                <h1 className="title">{staticData.bannerTitle}</h1>
+                <div className="title-waves" style={{backgroundImage: `url(${imgWaveform})`}}>
+                  <p>
+                    LISTEN TO MY MUSIC!
+                  </p>
+                  <div className="title-waves-music-link-container">
+                    <a target="_blank" href={staticData.links.spotify} className="title-waves-music-link"><FaSpotify></FaSpotify></a>
+                    <a target="_blank" href={staticData.links.applemusic} className="title-waves-music-link"><SiApplemusic></SiApplemusic></a>
+                    <a target="_blank" href={staticData.links.youtube} className="title-waves-music-link"><FaYoutube></FaYoutube></a>
+                  </div>
+                </div>
+              </div>
               <p className="subtitle">{staticData.bannerDescription}</p>
             </div>
           </div>
           <SocialContainer data={{
-            LinkedIn: "https://www.linkedin.com/in/the-akshat-s",
-            GitHub: "https://github.com/the-akze",
-            YouTube: "https://www.youtube.com/@the_akze",
-            Instagram: "http://instagram.com/the_akze"
+            LinkedIn: staticData.links.linkedin,
+            GitHub: staticData.links.github,
+            YouTube: staticData.links.youtube,
+            Instagram: staticData.links.instagram
           }} />
         </div>
       </div>
